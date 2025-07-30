@@ -3,6 +3,7 @@
 }
 :root {
   --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
 }
 html {
   font-size: 62.5%;
@@ -29,6 +30,11 @@ a {
   font-weight: 600;
   border-radius: 24.5px;
   background: #171100;
+  border-radius: 999px;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 .header {
@@ -38,6 +44,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .main-content {
   width: 1170px;
@@ -178,4 +185,54 @@ a {
   font-style: normal;
   line-height: 68px;
   letter-spacing: -1.16px;
+}
+
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.hero .cta-group {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+  margin-left: 28px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+.hero .watch-video span {
+  margin-left: 14px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.hero .desc-recent {
+  margin-top: 48px;
+}
+.hero .stats {
+  margin-top: 8px;
+}
+.hero .stats strong {
+  margin-right: 15;
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+.hero .stats strong:nth-child(2) {
+  margin-left: 20px;
 }
